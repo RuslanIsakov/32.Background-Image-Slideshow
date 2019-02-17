@@ -4,12 +4,52 @@
 	<meta charset="UTF-8">
     <title>Background Image Slideshow</title>
     <style>
-      </style>
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	min-width: 999px;
+}
+
+header {
+	height: 100%;
+	position: relative;
+}
+
+header div.content {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 50%;
+	max-width: none;
+	height: 190px;
+	margin-top: -95px;
+	background: rgba(255,255,255,0.8);
+	text-align: center;
+    	font-size: 80px;
+    	font-family: impact;
+}
+
+.color-1 {
+    color: #00bfff;
+    line-height: 180px;
+}
+
+.color-2 {
+	color: #ff007f;
+    	margin-left: 10px;
+}
+    
+    </style>
 </head>
 	<body>
 		<header>
-			<div class="content">
-				  <span class="color-1">BACKGROUND IMAGE</span><span class="color-2">SLIDESHOW</span> 
+			div class="content">
+			 	<span class="color-1">BACKGROUND IMAGE</span><span class="color-2">SLIDESHOW</span> 
 			</div>
 		</header>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
