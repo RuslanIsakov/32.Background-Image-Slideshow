@@ -1,1 +1,36 @@
-
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Background Image Slideshow</title>
+    <style>
+      </style>
+</head>
+	<body>
+		<header>
+			<div class="content">
+				  <span class="color-1">BACKGROUND IMAGE</span><span class="color-2">SLIDESHOW</span> 
+			</div>
+		</header>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mkinfinite.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('header').mkinfinite({
+					maxZoom:       1.4,
+					animationTime: 4000,
+					imagesRatio:   (960 / 720),
+					isFixedBG:     true,
+					zoomIn:        true,
+					imagesList:    new Array(
+						'images/1.jpg',
+						'images/2.jpg',
+						'images/3.jpg',
+						'images/4.jpg',
+						'images/5.jpg'
+					)
+				});
+			});
+		</script>
+	</body>
+</html>
